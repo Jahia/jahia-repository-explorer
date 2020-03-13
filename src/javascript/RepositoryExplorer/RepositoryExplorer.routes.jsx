@@ -12,5 +12,5 @@ registry.add('route', 'repositoryexplorer', {
     targets: ['nav-root-top'],
     path: REConstants.ROUTE,
     defaultPath: REConstants.ROUTE,
-    render: () => <IframeRenderer url={`${window.contextJsParameters.contextPath}/engines/manager.jsp?conf=repositoryexplorer-anthracite&lang=${window.contextJsParameters.locale}`}/>
+    render: () => <IframeRenderer url={`${window.contextJsParameters.contextPath}/engines/manager.jsp?conf=repositoryexplorer-anthracite&lang=${window.contextJsParameters.lang}`}/>
 });
