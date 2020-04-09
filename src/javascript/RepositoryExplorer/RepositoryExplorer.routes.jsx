@@ -11,7 +11,7 @@ registry.add('primary-nav-item', 'repositoryexplorerNavGroup', {
 });
 
 registry.add('route', 'repositoryexplorer', {
-    targets: ['nav-root-top'],
+    targets: ['main'],
     path: REConstants.ROUTE,
     defaultPath: REConstants.ROUTE,
     requiredPermission: 'repositoryExplorer',
