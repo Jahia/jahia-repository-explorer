@@ -16,5 +16,5 @@ registry.add('route', 'repositoryexplorer', {
     defaultPath: REConstants.ROUTE,
     requiredPermission: 'repositoryExplorer',
     requiredPermissionPath: '/',
-    render: () => <IframeRenderer url={`${window.contextJsParameters.contextPath}/engines/manager.jsp?conf=repositoryexplorer&lang=${window.contextJsParameters.lang}&jahia.ui.theme=default`}/>
+    render: () => <IframeRenderer url={`${window.contextJsParameters.contextPath}/engines/manager.jsp?conf=repositoryexplorer&lang=${window.contextJsParameters.lang}&jahia.ui.theme=default${window.location.search.replace('?', '&')}`}/>
 });
