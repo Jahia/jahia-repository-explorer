@@ -178,31 +178,6 @@
                     </instructions>
                 </configuration>
             </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>copy</id>
-                        <phase>initialize</phase>
-                        <goals>
-                            <goal>copy</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <artifactItems>
-                        <artifactItem>
-                            <groupId>org.jahia.modules</groupId>
-                            <artifactId>app-shell</artifactId>
-                            <type>json</type>
-                            <classifier>manifest</classifier>
-                        </artifactItem>
-                    </artifactItems>
-                </configuration>
-            </plugin>
-
         </plugins>
     </build>
     <profiles>
