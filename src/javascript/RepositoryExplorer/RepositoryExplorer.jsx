@@ -1,7 +1,6 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
-import {PrimaryNavItem} from '@jahia/moonstone';
-import Explore from '@jahia/moonstone/dist/icons/Explore';
+import {Explore, PrimaryNavItem} from '@jahia/moonstone';
 import {useHistory} from 'react-router';
 import REConstants from './RepositoryExplorer.constants';
 
