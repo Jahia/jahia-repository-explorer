@@ -3,7 +3,7 @@ import {registry} from '@jahia/ui-extender';
 import RepositoryExplorer from './RepositoryExplorer';
 
 export const registerRoute = () => {
-    registry.add('primary-nav-item', 'repositoryexplorerNavGroup', {
+    registry.add('primary-nav-item', 'repository-explorer', {
         targets: ['nav-root-top:6'],
         requiredPermission: 'repositoryExplorer',
         requiredPermissionPath: '/',

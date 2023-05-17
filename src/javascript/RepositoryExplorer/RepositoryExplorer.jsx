@@ -4,12 +4,12 @@ import {Explore, PrimaryNavItem} from '@jahia/moonstone';
 import {useHistory} from 'react-router';
 import REConstants from './RepositoryExplorer.constants';
 
-const RepositoryExplorer = () => {
+const RepositoryExplorer = props => {
     const history = useHistory();
     const {t} = useTranslation('jahia-repository-explorer');
 
     return (
-        <PrimaryNavItem role="repository-explorer-menu-item"
+        <PrimaryNavItem {...props}
                         icon={<Explore/>}
                         label={t('label')}
                         isSelected={history.location.pathname.startsWith(REConstants.ROUTE)}
